@@ -1,0 +1,225 @@
+.welcome {
+  color: pink;
+  width: 100%;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hr-1 {
+  width: 80%;
+  margin-top: 10px;
+}
+.welcome h1 {
+  font-size: 44px;
+  font-weight: 700;
+  text-shadow: 0 2px 2px rgb(0 0 0 / 40%);
+}
+.welcome p {
+  font-size: 0.95em;
+}
+.movieCard {
+  width: 212.5px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.airingToday {
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.movieList {
+  background-color: rgb(9, 9, 85);
+  width: 100%;
+}
+.availableMovies {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movieListText {
+  margin-top: 20px;
+}
+.availableMovies h3 {
+  margin: 50px;
+}
+.Details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+.Dets {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.getTicket-btn {
+  width: 230px;
+  background-color: pink;
+  color: blue;
+  border-radius: 5px;
+  padding: 10px;
+  border: 0;
+  margin-top: 20px;
+}
+.movieDetails{
+  margin-left: 100px;
+  padding: 10px;
+}
+.re{
+  display: flex;
+  flex-direction: row;
+}
+.likeIcon{
+  font-size: 22.704px;
+  margin-right: 20px;
+}
+.reviews{
+  margin-top: 80px;
+}
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.summary{
+  margin-top: 100px;
+}
+.summaryDets{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.plotSummary{
+  width: 60%;
+}
+.directorCast{
+width: 20%;
+}
+.Trailer{
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
+.techSpace{
+  width: 50%;
+  margin-left: 100px;
+}
+.cast{
+  margin-top: 70px;
+}
+.seatSelect{
+  height: 100vh;
+}
+
+.movie-container {
+  margin: 20px 0;
+}
+
+.movie-container select {
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container {
+  perspective: 1000px;
+  margin-bottom: 30px;
+}
+
+.seat {
+  background-color: #444451;
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat.selected {
+  background-color: #6feaf6;
+}
+
+.seat.occupied {
+  background-color: #fff;
+}
+
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.showcase {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+.row {
+  display: flex;
+}
+
+.screen {
+  background-color: #fff;
+  height: 70px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+p.text {
+  margin: 5px 0;
+}
+p.text span {
+  color: #6feaf6;
+}

@@ -1,21 +1,22 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './views/Home';
-import Description from './views/Description';
-import Checkout from './views/Checkout';
-import Navbar from './views/Components/Navbar'
+import {Home} from './views/Home';
+import {Description} from './views/Description';
+import {Checkout} from './views/Checkout';
+import Login from './views/Login';
+import  {Admin}  from './views/Admin';
 
 
  export const App = () => {
   return (
-    <BrowserRouter>
-    <Navbar>
-      <Routes>
+    <BrowserRouter>    
+      <Routes>        
         <Route index element={<Home />} path="/" />
-        <Route index element={<Description />} path="/" />
-        <Route index element={<Checkout />} path="/" />
+        <Route element={<Description />} path="/description" />
+        <Route element={<Checkout />} path="/checkout" />
+        <Route element={<Login/>} path="/login" />
+        <Route element={<Admin />} path="/admin" />
       </Routes>
-      </Navbar>
     </BrowserRouter>
   )
 }

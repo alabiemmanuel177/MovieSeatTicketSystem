@@ -1,0 +1,7 @@
+.Classroom {
+  display: flex;
+  flex-direction: row;
+}
+.classroom_sidebar_container {
+  width: 20%;
+}

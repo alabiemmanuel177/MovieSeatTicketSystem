@@ -1,11 +1,12 @@
 import React from 'react'
+// import SeatSelection from './Components/SeatSelection'
 
-const Checkout = () => {
+export const Checkout = () => {
   return (
     <div>
-      
+      {/* <SeatSelection/> */}
+
     </div>
   )
 }
 
-export default Checkout
