@@ -1,9 +1,11 @@
 import React from "react";
 import "./admin_sidebar.css";
 import { FaGraduationCap } from "react-icons/fa";
+import { Context } from "../../../Context/Context";
+import { useContext } from "react";
+
 
 export const AdminSidebar = ({ active, setActive }) => {
-  
   var btnContainer = document.getElementById("sidebar_button");
   if (btnContainer !== null) {
     var btns = btnContainer.getElementsByClassName("sidebarbtn");
@@ -15,10 +17,17 @@ export const AdminSidebar = ({ active, setActive }) => {
       });
     }
   }
+  const { user, dispatch } = useContext(Context);
+  const handleLogout = () => {
+    dispatch({ type: "LOGOUT" });
+  };
 
   return (
     <div className="classroom_sidebar">
       <h1 className="sidebar_head">BU CINEMA</h1>
+      <button className="btn" onClick={handleLogout}>
+        {user && "Log Out"}
+      </button>
       <div className="sidebar_button" id="sidebar_button">
         <btn
           className="sidebarbtn blue active"

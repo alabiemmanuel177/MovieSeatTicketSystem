@@ -52,7 +52,7 @@ const RecordSchema = new mongoose.Schema(
       type: String,
     },
     dateofair: {
-      type: String,
+      type: Date,
     },
     timeofair: {
       type: String,

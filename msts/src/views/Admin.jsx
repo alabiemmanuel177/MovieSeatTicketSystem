@@ -7,7 +7,7 @@ import axios from "axios";
 import config from "../config";
 import { useState, useEffect } from "react";
 
-export const Admin = () => {
+export const Admin = ({user}) => {
   const [active, setActive] = useState("movie");
   const [movies, setMovies] = useState([]);
   const [tickets, setTickets] = useState([]);
@@ -31,7 +31,7 @@ export const Admin = () => {
   return (
     <div className="Classroom">
       <div className="classroom_sidebar_container">
-        <AdminSidebar active={active} setActive={setActive} />
+        <AdminSidebar active={active} setActive={setActive} user={user} />
       </div>
       {active === "movie" && <MoviesTable movies={movies} />}
       {active === "ticket" && <TicketsTable tickets={tickets} />}
