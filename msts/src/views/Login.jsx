@@ -23,6 +23,7 @@ const Login = () => {
             res.data && window.location.replace("/admin");
         } catch (err) {
             dispatch({ type: "LOGIN_FAILURE" });
+            console.log(err);
         }
     };
 
@@ -32,9 +33,7 @@ const Login = () => {
             <div className="form_holder">
                 <div className="form_space"></div>
                 <div className="signup_form">
-                    <form className="adminlogin_form"
-                        onSubmit={handleSubmit}
-                    >
+                    <form className="adminlogin_form" onSubmit={handleSubmit}>
                         <h2 style={{ textAlign: "center" }} className="adminlogin_title">
                             Admin Login
                         </h2>

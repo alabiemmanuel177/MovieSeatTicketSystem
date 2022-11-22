@@ -1,5 +1,17 @@
 const mongoose = require("mongoose");
 
+const photoSchema = mongoose.Schema({
+  url: {
+    type: String,
+  },
+  fileName: {
+    type: String,
+  },
+  imageId: {
+    type: String,
+  }
+})
+
 const RecordSchema = new mongoose.Schema(
   {
     title: {
@@ -8,9 +20,7 @@ const RecordSchema = new mongoose.Schema(
       unique: true,
     },
     cover: {
-      type: String,
-      // required: true,
-      // unique: true,
+      type: [photoSchema],
     },
     genre: {
       type: String,
@@ -52,7 +62,7 @@ const RecordSchema = new mongoose.Schema(
       type: String,
     },
     dateofair: {
-      type: Date,
+      type: String,
     },
     timeofair: {
       type: String,

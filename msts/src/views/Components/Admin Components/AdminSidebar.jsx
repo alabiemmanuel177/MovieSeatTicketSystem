@@ -1,6 +1,7 @@
 import React from "react";
 import "./admin_sidebar.css";
-import { FaGraduationCap } from "react-icons/fa";
+import { BiMoviePlay } from "react-icons/bi";
+import { FaTicketAlt } from "react-icons/fa";
 import { Context } from "../../../Context/Context";
 import { useContext } from "react";
 
@@ -25,7 +26,7 @@ export const AdminSidebar = ({ active, setActive }) => {
   return (
     <div className="classroom_sidebar">
       <h1 className="sidebar_head">BU CINEMA</h1>
-      <button className="btn" onClick={handleLogout}>
+      <button className="logout-btn" onClick={handleLogout}>
         {user && "Log Out"}
       </button>
       <div className="sidebar_button" id="sidebar_button">
@@ -33,14 +34,14 @@ export const AdminSidebar = ({ active, setActive }) => {
           className="sidebarbtn blue active"
           onClick={() => setActive("movie")}
         >
-          <FaGraduationCap className="icon" />
+          <BiMoviePlay className="icon" />
           Movies
         </btn>
         <btn
           className="sidebarbtn blue"
           onClick={() => setActive("ticket")}
         >
-          <FaGraduationCap className="icon" />
+          <FaTicketAlt className="icon" />
           Tickets
         </btn>
       </div>

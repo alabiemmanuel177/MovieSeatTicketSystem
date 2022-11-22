@@ -5,7 +5,7 @@ import TableBody from "@mui/material/TableBody";
 import TableRow from "@mui/material/TableRow";
 import { TableT } from "./Table";
 
-export const TechSpaceTable = () => {
+export const TechSpaceTable = ({ movie }) => {
 
     return (
         <>
@@ -15,12 +15,12 @@ export const TechSpaceTable = () => {
                     <Table >
                         <TableBody>
                             <TableRow>
-                                <TableCell className="tablecell">25th November </TableCell>
-                                <TableCell className="tablecell">3:00 p.m</TableCell>
-                                <TableCell className="tablecell">Cinema A</TableCell>
+                                <TableCell className="tablecell">{movie.dateofair}</TableCell>
+                                <TableCell className="tablecell">{movie.timeofair}</TableCell>
+                                <TableCell className="tablecell">{movie.cinemalocation}</TableCell>
                             </TableRow>
                         </TableBody>
-                            <TableT />
+                        <TableT movie={movie} />
                     </Table>
                 </React.Fragment>
             </div>

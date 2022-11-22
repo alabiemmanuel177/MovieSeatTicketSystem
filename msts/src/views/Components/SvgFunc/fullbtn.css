@@ -1,0 +1,148 @@
+.fullbtn {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.spc {
+  color: green;
+  background-color: white;
+  border: 1px solid green;
+  width: 50%;
+  margin-right: 5px;
+  width: 100px;
+}
+.spc2 {
+  color: red;
+  background-color: white;
+  border: 1px solid red;
+  width: 50%;
+}
+.del-btn {
+  background-color: red !important;
+  color: white !important;
+  margin-top: 20px;
+}
+
+form {
+  z-index: 1 !important;
+}
+
+.title {
+  width: 200px;
+}
+.year {
+  width: 100px;
+}
+.trailerlink {
+  width: 300px;
+}
+.flex01 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cl {
+  width: 50px;
+}
+.textarea {
+  width: 400px;
+}
+
+.edit_img {
+  background-color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+
+.profile_edit {
+  margin-bottom: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.img_edit {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.user_icon {
+  /* height: 150px !important; */
+  /* width: 200px; */
+  font-size: 100px;
+}
+
+.mv {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 7%;
+  width: 50%;
+}
+
+.save-btn {
+  background-color: #4caf50 !important;
+  color: white !important;
+  margin-top: 20px;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.imgdel_holder {
+  display: flex;
+  flex-direction: row;
+}
+
+.img_name {
+  margin-right: 20px;
+}
+
+.upload_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.upload_btn {
+  margin-left: 10%;
+  width: 215px;
+}
+
+.td2 {
+  width: 100px !important;
+}
+.td3 {
+  width: 350px !important;
+  overflow: auto !important;
+}
+
+.tttt {
+  width: 100% !important;
+}
+
+.upload_btn2 {
+  width: 100% !important;
+}
+
+.ddd {
+  display: flex;
+  flex-direction: row;
+}

@@ -4,8 +4,8 @@ import TableCell from "@mui/material/TableCell";
 import TableBody from "@mui/material/TableBody";
 import TableRow from "@mui/material/TableRow";
 import TableHead from "@mui/material/TableHead";
-
 import "../styles.css"
+import Add from "../SvgFunc/AddMovie";
 
 export const MoviesTable = ({ movies }) => {
 
@@ -14,6 +14,7 @@ export const MoviesTable = ({ movies }) => {
       <div className="patient-table">
         <React.Fragment>
           <h3>Details</h3>
+          <Add className="add-btn" />
           <Table >
             <TableHead>
               <TableRow>
