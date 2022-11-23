@@ -38,7 +38,7 @@ app.use(
   async (req, res) => {
     console.log("Uploading");
 
-    const uploader = async (path) => await cloudinary.uploads(path, "Images");
+    const uploader = async (path) => await cloudinary.uploads(path, "OpenSource");
 
     if (req.method === "POST") {
       const urls = [];

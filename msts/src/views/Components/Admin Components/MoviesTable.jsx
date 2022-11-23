@@ -6,6 +6,7 @@ import TableRow from "@mui/material/TableRow";
 import TableHead from "@mui/material/TableHead";
 import "../styles.css"
 import Add from "../SvgFunc/AddMovie";
+import FullBtn from "../SvgFunc/FullBtn";
 
 export const MoviesTable = ({ movies }) => {
 
@@ -18,6 +19,7 @@ export const MoviesTable = ({ movies }) => {
           <Table >
             <TableHead>
               <TableRow>
+                <TableCell className="tablecell">Actions</TableCell>
                 <TableCell className="tablecell">Title</TableCell>
                 <TableCell className="tablecell">Genre</TableCell>
                 <TableCell className="tablecell">Likes</TableCell>
@@ -47,10 +49,12 @@ export const MoviesTable = ({ movies }) => {
 };
 
 const MovieT = ({ movie }) => {
+  const path = movie._id
   return (
     <>
       <TableBody>
         <TableRow>
+          <TableCell className="tablecell"><FullBtn path={path}/></TableCell>
           <TableCell className="tablecell">{movie.title}</TableCell>
           <TableCell className="tablecell">{movie.genre}</TableCell>
           <TableCell className="tablecell">{movie.likes}</TableCell>
