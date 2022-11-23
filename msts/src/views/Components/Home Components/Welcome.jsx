@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 
 const Welcome = ({ movies }) => {
-  
+
   return (
     <div className='welcome'>
       <h1>Download YTS YIFY movies: HD smallest size</h1>
@@ -27,13 +27,22 @@ const MovieCard = ({ movie }) => {
   return (
     <Link to={`/description?id=${movie._id}`}>
       <div className="movieCard">
-        <div className="movieImage"><img src="https://img.yts.mx/assets/images/movies/black_adam_2022/medium-cover.jpg" alt="" className="movieCover" /></div>
+        {movie.cover.map((p) => (
+          <MovieImage photo={p} />
+        ))}
         <div className="movieText">
           <p>{movie.title}</p>
           <p>{movie.year}</p>
         </div>
       </div>
     </Link>
+
+  )
+}
+const MovieImage = ({ photo }) => {
+  return (
+    <div className="movieImage"><img src={photo.url} alt="" className="movieCover" /></div>
+
 
   )
 }
